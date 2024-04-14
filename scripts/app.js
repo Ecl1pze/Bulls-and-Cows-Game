@@ -24,7 +24,6 @@ function createingCombinaton(length, range) {
 }
 
 const compCombination = createingCombinaton(MAX_LENGTH, RANGE);
-console.log(compCombination);
 
 let countStep = 1;
 
