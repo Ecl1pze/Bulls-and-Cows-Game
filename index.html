@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Bulls and Cows</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#">
+          <img src="logo.svg" alt="" />
+        </a>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="rules">
+          <span>Правила игры</span>
+          <p>
+            Компьютер задумывает четыре различные цифры из 0,1,2,...9. Игрок
+            делает ходы, чтобы узнать эти цифры и их порядок.
+          </p>
+          <p>
+            Каждый ход состоит из четырёх цифр, 0 может стоять на первом месте.
+          </p>
+          <p>
+            В ответ компьютер показывает число отгаданных цифр, стоящих на своих
+            местах (число быков) и число отгаданных цифр, стоящих не на своих
+            местах (число коров).
+          </p>
+          <span>Пример</span>
+          <p>Компьютер задумал 0834.</p>
+          <p>Игрок сделал ход 8134.</p>
+          <p>Компьютер ответил: 2 быка (цифры 3 и 4) и 1 корова (цифра 8).</p>
+        </div>
+        <div class="game">
+          <div class="exodus">Победа</div>
+          <input
+            class="game-input"
+            type="text"
+            placeholder="Введите комбинацию"
+          />
+          <button class="game-button">Сделать ход</button>
+        </div>
+        <div class="steps">
+          <h2>Ходы:</h2>
+        </div>
+      </div>
+    </main>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

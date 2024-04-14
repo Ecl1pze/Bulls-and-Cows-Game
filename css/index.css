@@ -1,0 +1,86 @@
+body {
+	background: #1A1A1A;
+	padding: 15px 0;
+	color: #FFF;
+	font-family: 'Roboto', sans-serif
+}
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.header {
+	margin-bottom: 50px;
+}
+
+.main>.container {
+	display: grid;
+	grid-template-columns: 1fr 400px 1fr;
+}
+
+.rules>span {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 35px;
+}
+
+.rules>p {
+	font-size: 18px;
+	text-wrap: balance;
+	line-height: 24px;
+}
+
+.game {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.exodus {
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 100px;
+	opacity: 0;
+	user-select: none;
+}
+
+.exodus_win {
+	color: #15F5BA;
+	opacity: 1;
+}
+
+.exodus_lose {
+	opacity: 1;
+	color: #FF204E;
+}
+
+.game-input {
+	background: #292828;
+	padding: 10px 5px 10px 10px;
+	border-radius: 10px;
+	font-size: 20px;
+	color: #FFF;
+	margin-bottom: 50px;
+}
+
+.game-button {
+	background: #292828;
+	font-size: 20px;
+	border-radius: 10px;
+	padding: 15px;
+	color: #FFF;
+}
+
+.steps>h2 {
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+.step {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
