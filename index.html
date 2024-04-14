@@ -17,7 +17,7 @@
     <header class="header">
       <div class="container">
         <a href="#">
-          <img src="logo.svg" alt="" />
+          <img class="logo" src="logo.svg" alt="" />
         </a>
       </div>
     </header>
@@ -46,13 +46,16 @@
           <div class="exodus">Победа</div>
           <input
             class="game-input"
-            type="text"
+            type="number"
             placeholder="Введите комбинацию"
           />
           <button class="game-button">Сделать ход</button>
         </div>
         <div class="steps">
           <h2>Ходы:</h2>
+          <p class="step">
+            ${countStep}-й ход: ${userComb}. ${handlerMap( step )}
+          </p>
         </div>
       </div>
     </main>
