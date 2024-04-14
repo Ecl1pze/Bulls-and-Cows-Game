@@ -1,6 +1,6 @@
 body {
 	background: #1A1A1A;
-	padding: 15px 0;
+	padding: 15px;
 	color: #FFF;
 	font-family: 'Roboto', sans-serif
 }
@@ -12,6 +12,10 @@ body {
 
 .header {
 	margin-bottom: 50px;
+}
+
+.logo {
+	width: 25%;
 }
 
 .main>.container {
@@ -42,7 +46,7 @@ body {
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-bottom: 100px;
-	opacity: 0;
+	/* opacity: 0; */
 	user-select: none;
 }
 
@@ -83,4 +87,165 @@ body {
 	font-size: 18px;
 	font-weight: 500;
 	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+
+	.rules>span {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 35px;
+	}
+
+	.rules>p {
+		font-size: 16px;
+		text-wrap: balance;
+		line-height: 24px;
+	}
+
+	.steps>h2 {
+		font-size: 20px;
+		font-weight: 600;
+		margin-bottom: 30px;
+	}
+
+	.step {
+		font-size: 16px;
+		font-weight: 500;
+		margin-bottom: 10px;
+	}
+
+	.game-input {
+		background: #292828;
+		padding: 10px 5px 10px 10px;
+		border-radius: 10px;
+		font-size: 16px;
+		color: #FFF;
+		margin-bottom: 50px;
+	}
+
+	.game-button {
+		background: #292828;
+		font-size: 16px;
+		border-radius: 10px;
+		padding: 15px;
+		color: #FFF;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.rules>span {
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 35px;
+	}
+
+	.rules>p {
+		font-size: 16px;
+		text-wrap: balance;
+		line-height: 24px;
+	}
+
+	.steps>h2 {
+		font-size: 14px;
+		font-weight: 600;
+		margin-bottom: 30px;
+	}
+
+	.step {
+		font-size: 14px;
+		font-weight: 500;
+		margin-bottom: 10px;
+	}
+
+	.game-input {
+		background: #292828;
+		padding: 10px 5px 10px 10px;
+		border-radius: 10px;
+		font-size: 14px;
+		color: #FFF;
+		margin-bottom: 50px;
+	}
+
+	.game-button {
+		background: #292828;
+		font-size: 14px;
+		border-radius: 10px;
+		padding: 15px;
+		color: #FFF;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.main>.container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr minmax(150px, auto) 1fr;
+		grid-template-areas:
+			'game'
+			'steps'
+			'rules';
+	}
+
+	.exodus {
+		font-size: 30px;
+		margin-bottom: 50px;
+	}
+
+	.game {
+		grid-area: game;
+	}
+
+	.game-input {
+		margin-bottom: 35px;
+	}
+
+	.steps {
+		grid-area: steps;
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+
+	.steps>h2 {
+		text-align: center;
+	}
+
+	.rules {
+		text-align: center;
+	}
+
+	.rules>span {
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 35px;
+	}
+
+	.rules>p {
+		font-size: 14px;
+		text-wrap: balance;
+		line-height: 24px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+
+	.main>.container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: minmax(150px, auto) minmax(150px, auto) minmax(150px, auto);
+		grid-template-areas:
+			'game'
+			'steps'
+			'rules';
+	}
+
+	.exodus {
+		font-size: 24px;
+		margin-bottom: 25px;
+	}
+
+	.game-input {
+		margin-bottom: 15px;
+	}
 }
